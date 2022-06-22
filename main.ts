@@ -1,6 +1,3 @@
-input.onButtonPressed(Button.A, function () {
-    On = true
-})
 /**
  * - Press A to turn on, press B to turn off.
  * 
@@ -12,6 +9,9 @@ input.onButtonPressed(Button.A, function () {
  * 
  * - Default acceleration strength (with no movement) is approximately 1000mg (=1g) due to gravity.
  */
+input.onButtonPressed(Button.A, function () {
+    On = true
+})
 input.onButtonPressed(Button.B, function () {
     On = false
     max_acceleration_strength = 0
